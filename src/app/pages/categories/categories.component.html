@@ -1,0 +1,9 @@
+<div class="grid container-flex flex-container">
+  <a
+    class="btn-large grey darken-1"
+    *ngFor="let category of categories | async"
+    [routerLink]="['/category' , category]"
+    >{{ category }}</a
+  >
+</div>
+
